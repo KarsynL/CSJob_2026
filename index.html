@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Radar AU/NZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Australia + New Zealand + Remote-ready workflow</p>
+          <h1>Job Radar for Cybersecurity, AI Research, and Industry Roles</h1>
+          <p class="hero-text">
+            Track active roles that match your goals: cyber-security and AI-related
+            fellowships, assistant and post-doc positions in Australia/New Zealand,
+            plus software, data, and cyber roles in Australia.
+          </p>
+        </div>
+        <div class="hero-panel">
+          <div class="stat">
+            <span class="stat-label">Active jobs</span>
+            <strong id="active-count">0</strong>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Today's priority list</span>
+            <strong id="priority-count">0</strong>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Tracked sources</span>
+            <strong>LinkedIn / Seek / Indeed / Company</strong>
+          </div>
+        </div>
+      </header>
+
+      <main class="layout">
+        <aside class="filters">
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>Filters</h2>
+              <button id="reset-filters" class="ghost-button" type="button">Reset</button>
+            </div>
+
+            <label class="field">
+              <span>Search</span>
+              <input id="search-input" type="search" placeholder="Title, org, skill, keyword" />
+            </label>
+
+            <label class="field">
+              <span>Track</span>
+              <select id="track-filter">
+                <option value="all">All tracks</option>
+                <option value="research">Research</option>
+                <option value="industry">Industry</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Region</span>
+              <select id="region-filter">
+                <option value="all">All regions</option>
+                <option value="australia">Australia</option>
+                <option value="new-zealand">New Zealand</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Role family</span>
+              <select id="role-filter">
+                <option value="all">All role families</option>
+                <option value="cybersecurity">Cyber Security</option>
+                <option value="ai-research">AI Research</option>
+                <option value="software-engineering">Software Engineering</option>
+                <option value="data-analytics">Data Analytics</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Source</span>
+              <select id="source-filter">
+                <option value="all">All sources</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="seek">Seek</option>
+                <option value="indeed">Indeed</option>
+                <option value="company">Company site</option>
+              </select>
+            </label>
+
+            <label class="checkbox-row">
+              <input id="active-only" type="checkbox" checked />
+              <span>Only show active roles</span>
+            </label>
+
+            <label class="checkbox-row">
+              <input id="priority-only" type="checkbox" />
+              <span>Only show today's priority jobs</span>
+            </label>
+
+            <label class="checkbox-row">
+              <input id="remote-friendly" type="checkbox" />
+              <span>Prefer remote / hybrid-friendly</span>
+            </label>
+          </section>
+
+          <section class="panel">
+            <h2>How to use</h2>
+            <ul class="compact-list">
+              <li>Green cards are active and ready to review.</li>
+              <li>Priority score favors recency, fit, and direct relevance.</li>
+              <li>Use status tags to track what you have already applied for.</li>
+              <li>Replace sample entries in <code>jobs.js</code> with live feeds later.</li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="content">
+          <section class="panel panel-highlight">
+            <div class="panel-heading">
+              <h2>Today's Priority List</h2>
+              <span class="panel-note">Best-fit active opportunities to apply first</span>
+            </div>
+            <div id="priority-list" class="priority-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>All Matching Roles</h2>
+              <span id="results-summary" class="panel-note"></span>
+            </div>
+            <div id="job-list" class="job-list"></div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="./jobs.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
