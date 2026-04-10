@@ -105,9 +105,10 @@ Edit [`jobs.js`](/Users/karsyn/Documents/Playground/jobs.js) and add entries in 
 A role is shown as active only when:
 
 - `status` is `"active"`
+- `verifiedDate` is still inside the 1-day freshness window in [`app.js`](/Users/karsyn/Documents/Playground/app.js)
 - `closingDate` is either empty or on/after today's date in [`app.js`](/Users/karsyn/Documents/Playground/app.js)
 
-When a posting does not expose a close date in the search result, the app keeps it active and relies on the last verified date you stored.
+When a posting does not expose a close date in the search result, the app keeps it active only if it has been re-verified within the daily window.
 
 ## Good next steps
 
