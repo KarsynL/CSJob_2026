@@ -1,0 +1,80 @@
+[
+  {
+    "id": "anu-research-jobs",
+    "source": "company",
+    "organization": "Australian National University",
+    "url": "https://jobs.anu.edu.au/cw/en/listing/",
+    "region": "australia",
+    "track": "research",
+    "roleFamily": "ai-research",
+    "workMode": "on-site",
+    "includeKeywords": ["research", "postdoctoral", "fellow", "ai", "robot", "data", "security"],
+    "excludeKeywords": ["student", "professor", "casual", "intern"],
+    "tags": ["ANU", "auto-discovered", "research"]
+  },
+  {
+    "id": "canva-security-jobs",
+    "source": "company",
+    "organization": "Canva",
+    "url": "https://www.lifeatcanva.com/en/jobs/search/?q=security",
+    "region": "australia",
+    "track": "industry",
+    "roleFamily": "cybersecurity",
+    "workMode": "hybrid",
+    "includeKeywords": ["security", "threat", "detection", "red team", "platform"],
+    "excludeKeywords": ["intern", "internship"],
+    "tags": ["Canva", "auto-discovered", "security"]
+  },
+  {
+    "id": "linkedin-au-cyber-jobs",
+    "source": "linkedin",
+    "organization": "Unknown",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia",
+    "region": "australia",
+    "track": "industry",
+    "roleFamily": "cybersecurity",
+    "workMode": "hybrid",
+    "includeKeywords": ["cyber", "security", "threat", "analyst", "engineer"],
+    "excludeKeywords": ["intern", "graduate"],
+    "tags": ["LinkedIn", "auto-collected", "cyber"]
+  },
+  {
+    "id": "seek-ai-auckland",
+    "source": "seek",
+    "organization": "Unknown",
+    "url": "https://www.seek.co.nz/ai-research-jobs/in-All-Auckland",
+    "region": "new-zealand",
+    "track": "research",
+    "roleFamily": "ai-research",
+    "workMode": "remote",
+    "includeKeywords": ["ai", "research", "fellow", "scientist", "machine learning"],
+    "excludeKeywords": ["intern", "graduate"],
+    "tags": ["SEEK", "auto-discovered", "AI"]
+  },
+  {
+    "id": "indeed-au-data-jobs",
+    "source": "indeed",
+    "organization": "Unknown",
+    "url": "https://au.indeed.com/jobs?q=data+analyst&l=Australia",
+    "region": "australia",
+    "track": "industry",
+    "roleFamily": "data-analytics",
+    "workMode": "hybrid",
+    "includeKeywords": ["data", "analyst", "analytics", "insights"],
+    "excludeKeywords": ["intern", "graduate"],
+    "tags": ["Indeed", "auto-collected", "data"]
+  },
+  {
+    "id": "google-au-ai-jobs",
+    "source": "company",
+    "organization": "Unknown",
+    "url": "https://www.google.com/search?q=site%3Acareers.google.com+Australia+AI+jobs",
+    "region": "australia",
+    "track": "industry",
+    "roleFamily": "software-engineering",
+    "workMode": "hybrid",
+    "includeKeywords": ["ai", "machine learning", "software", "engineer"],
+    "excludeKeywords": ["intern", "student"],
+    "tags": ["Google Search", "auto-collected", "AI"]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "name": "job-radar-au-nz",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect:jobs": "node scripts/collect-jobs.mjs",
+    "collect:jobs:offline": "node scripts/collect-jobs.mjs --offline"
+  }
+}

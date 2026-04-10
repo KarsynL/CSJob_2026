@@ -30,7 +30,7 @@
             <strong id="active-count">0</strong>
           </div>
           <div class="stat">
-            <span class="stat-label">Today's priority list</span>
+            <span class="stat-label">This week's priority list</span>
             <strong id="priority-count">0</strong>
           </div>
           <div class="stat">
@@ -95,12 +95,12 @@
 
             <label class="checkbox-row">
               <input id="active-only" type="checkbox" checked />
-              <span>Only show active roles</span>
+              <span>Only show open roles</span>
             </label>
 
             <label class="checkbox-row">
               <input id="priority-only" type="checkbox" />
-              <span>Only show today's priority jobs</span>
+              <span>Only show this week's priority jobs</span>
             </label>
 
             <label class="checkbox-row">
@@ -113,7 +113,7 @@
             <h2>How to use</h2>
             <p id="freshness-note" class="panel-note"></p>
             <ul class="compact-list">
-              <li>Only roles verified today stay in the active list by default.</li>
+              <li>Open roles stay visible even when they need a fresh check.</li>
               <li>Priority score favors recency, fit, and direct relevance.</li>
               <li>Cards marked "Needs refresh" should be re-checked before applying.</li>
               <li>Replace sample entries in <code>jobs.js</code> with live feeds later.</li>
@@ -124,7 +124,7 @@
         <section class="content">
           <section class="panel panel-highlight">
             <div class="panel-heading">
-              <h2>Today's Priority List</h2>
+              <h2>This Week's Priority List</h2>
               <span class="panel-note">Best-fit active opportunities to apply first</span>
             </div>
             <div id="priority-list" class="priority-list"></div>

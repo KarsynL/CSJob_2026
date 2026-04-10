@@ -1,119 +1,131 @@
 # Job Radar AU/NZ
 
-A lightweight local job index tailored for:
-
-- Cyber-security and AI-related research fellow / assistant / post-doc roles in Australia and New Zealand
-- Software engineer, data analyst, and cyber-security industry roles in Australia
-- Active listings from LinkedIn, Seek, Indeed, and company career sites
+A static job website for Australia and New Zealand that rebuilds its job list from public web pages on a weekly schedule.
 
 ## Files
 
-- `index.html`: the UI shell
-- `styles.css`: visual design
-- `jobs.js`: job dataset
-- `app.js`: filtering, active status logic, and priority ranking
+- `index.html`: UI shell
+- `styles.css`: styling
+- `app.js`: filtering, active-status logic, and rendering
+- `jobs.js`: generated job dataset used by the browser
+- `jobs.discovery.json`: public source pages to collect from
+- `scripts/collect-jobs.mjs`: weekly collector that rebuilds `jobs.js`
+- `scripts/job-data-utils.mjs`: shared helpers for generated data files
+- `.github/workflows/weekly-job-collect.yml`: weekly GitHub Actions workflow
 
-## Run locally
+## How It Works
 
-Open [`index.html`](/Users/karsyn/Documents/Playground/index.html) in a browser.
+The website is static, but its data can be refreshed automatically.
 
-The current dataset has been refreshed with real, source-linked opportunities that were visible on March 31, 2026.
+Each weekly collection run:
 
-Or run a local static server from `/Users/karsyn/Documents/Playground`:
+1. Reads [`jobs.discovery.json`](/Users/karsyn/Documents/Playground/jobs.discovery.json)
+2. Fetches the public listing/search pages configured there
+3. Extracts likely job links using simple HTML rules
+4. Normalizes them into the website job format
+5. Overwrites [`jobs.js`](/Users/karsyn/Documents/Playground/jobs.js) from scratch
+
+There is no saved seed JSON in the collection pipeline anymore.
+
+## Current Sources
+
+Configured sources currently include public pages for:
+
+- ANU jobs
+- Canva jobs
+- LinkedIn jobs search
+- SEEK jobs search
+- Indeed jobs search
+- Google search results
+
+These are defined in [`jobs.discovery.json`](/Users/karsyn/Documents/Playground/jobs.discovery.json).
+
+## Run Locally
+
+Open [`index.html`](/Users/karsyn/Documents/Playground/index.html) directly in a browser, or run:
 
 ```bash
+cd /Users/karsyn/Documents/Playground
 python3 -m http.server 8000
 ```
 
 Then open [http://localhost:8000](http://localhost:8000).
 
-## Publish with GitHub Pages
+## Test The Collector
 
-This project is already structured for GitHub Pages because it is a static site with `index.html` at the repo root.
-
-### Option 1: Deploy from the main branch
-
-1. Create a new GitHub repository.
-2. Add that repo as the remote for this folder.
-3. Push the files to the default branch.
-4. In GitHub, open `Settings` -> `Pages`.
-5. Under `Build and deployment`, choose `Deploy from a branch`.
-6. Select your default branch and the `/ (root)` folder.
-7. Save.
-
-Your public link will usually look like:
-
-```text
-https://YOUR_GITHUB_USERNAME.github.io/REPOSITORY_NAME/
-```
-
-### Commands to connect and push
-
-Replace `YOUR_GITHUB_USERNAME` and `REPOSITORY_NAME` with your own values:
+Dry-run the source configuration without changing [`jobs.js`](/Users/karsyn/Documents/Playground/jobs.js):
 
 ```bash
-git add .
-git commit -m "Initial job radar site"
-git branch -M main
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/REPOSITORY_NAME.git
-git push -u origin main
+cd /Users/karsyn/Documents/Playground
+npm run collect:jobs:offline
 ```
 
-If you prefer SSH:
+Run the real collector:
 
 ```bash
-git remote add origin git@github.com:YOUR_GITHUB_USERNAME/REPOSITORY_NAME.git
-git push -u origin main
+cd /Users/karsyn/Documents/Playground
+npm run collect:jobs
 ```
 
-### After publishing
+Then reload the site and inspect [`jobs.js`](/Users/karsyn/Documents/Playground/jobs.js).
 
-- GitHub Pages may take a minute or two to go live.
-- If the site does not load at first, refresh after the Pages deployment finishes.
-- Once published, you can share the GitHub Pages URL directly.
+## Configure What Gets Collected
 
-## Update the jobs list
+Edit [`jobs.discovery.json`](/Users/karsyn/Documents/Playground/jobs.discovery.json).
 
-Edit [`jobs.js`](/Users/karsyn/Documents/Playground/jobs.js) and add entries in this shape:
+Each source can define:
 
-```js
-{
-  id: "unique-id",
-  title: "Postdoctoral Research Fellow in Cyber Security",
-  organization: "University name or company",
-  location: "City, Country",
-  region: "australia" | "new-zealand",
-  track: "research" | "industry",
-  roleFamily: "cybersecurity" | "ai-research" | "software-engineering" | "data-analytics",
-  source: "linkedin" | "seek" | "indeed" | "company",
-  status: "active" | "inactive",
-  workMode: "remote" | "hybrid" | "on-site",
-  postedDate: "YYYY-MM-DD",
-  postedLabel: "Listed 3 days ago",
-  closingDate: "YYYY-MM-DD",
-  priorityScore: 0-100,
-  verifiedDate: "YYYY-MM-DD",
-  sourceNote: "What was verified and where",
-  tags: ["keyword 1", "keyword 2"],
-  summary: "Why this role matters to you.",
-  url: "https://..."
-}
-```
+- `url`: public listing/search page
+- `source`: `company`, `linkedin`, `seek`, or `indeed`
+- `region`, `track`, `roleFamily`, `workMode`
+- `includeKeywords`: words that should appear in a likely match
+- `excludeKeywords`: words to filter out
+- `tags`
+- optional `priorityScore`
 
-## What "active" means right now
+## Weekly GitHub Automation
 
-A role is shown as active only when:
+The workflow is in [`.github/workflows/weekly-job-collect.yml`](/Users/karsyn/Documents/Playground/.github/workflows/weekly-job-collect.yml).
+
+It:
+
+- runs weekly
+- rebuilds [`jobs.js`](/Users/karsyn/Documents/Playground/jobs.js) from public sources
+- commits the updated generated file back to GitHub
+
+The current cron is set to Sunday `22:00 UTC`, which is Monday morning in Sydney.
+
+## Publish With GitHub Pages
+
+1. Push this repository to GitHub.
+2. In GitHub, open `Settings` -> `Pages`.
+3. Under `Build and deployment`, choose `Deploy from a branch`.
+4. Select your default branch and the `/ (root)` folder.
+5. Save.
+
+If Actions is enabled, the weekly collector can refresh the generated job data and GitHub Pages will serve the updated static site.
+
+## Limitations
+
+This collector uses lightweight public-page scraping, so it is inherently fragile.
+
+- Company career pages are the most reliable sources.
+- LinkedIn, SEEK, Indeed, and Google can block scraping or change their markup.
+- Some weeks a source may return fewer jobs or none at all.
+- Generated summaries, locations, and labels are approximate and may need refinement later.
+
+## Current Active Logic
+
+In the UI, a role is treated as open when:
 
 - `status` is `"active"`
-- `verifiedDate` is still inside the 1-day freshness window in [`app.js`](/Users/karsyn/Documents/Playground/app.js)
-- `closingDate` is either empty or on/after today's date in [`app.js`](/Users/karsyn/Documents/Playground/app.js)
+- `closingDate` is empty or on/after today
 
-When a posting does not expose a close date in the search result, the app keeps it active only if it has been re-verified within the daily window.
+The freshness badge in [`app.js`](/Users/karsyn/Documents/Playground/app.js) still uses the role’s `verifiedDate`.
 
-## Good next steps
+## Good Next Steps
 
-- Replace the sample entries with real jobs
-- Re-verify entries every day or two, especially LinkedIn / SEEK results without explicit closing dates
-- Add an import script that normalizes jobs from LinkedIn / Seek / Indeed / company pages into `jobs.js`
-- Add saved status fields like `not-applied`, `applied`, `interview`, `rejected`
-- Add deduplication by title + organization + location + source URL
+- Add more reliable company career pages to [`jobs.discovery.json`](/Users/karsyn/Documents/Playground/jobs.discovery.json)
+- Add source-specific parsers for ANU, Canva, SEEK, Indeed, and LinkedIn
+- Improve ranking so strong matches score above generic collected roles
+- Add richer deduplication and better location extraction

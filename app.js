@@ -1,4 +1,4 @@
-const DAILY_REFRESH_WINDOW_DAYS = 1;
+const REFRESH_WINDOW_DAYS = 7;
 
 const getToday = () => {
   const today = new Date();
@@ -59,39 +59,30 @@ const getVerificationAge = (job, today = getToday()) => {
   return Math.max(0, diffInDays(today, verifiedDate));
 };
 
-const needsDailyRefresh = (job, today = getToday()) =>
-  getVerificationAge(job, today) >= DAILY_REFRESH_WINDOW_DAYS;
+const needsRefresh = (job, today = getToday()) => getVerificationAge(job, today) >= REFRESH_WINDOW_DAYS;
 
 const getJobStatusLabel = (job, today = getToday()) => {
-  if (job.status !== "active") {
+  if (!isOpen(job, today)) {
     return { label: "Closed", className: "inactive" };
   }
 
-  const closingDate = parseDate(job.closingDate);
-
-  if (closingDate && closingDate < today) {
-    return { label: "Closed", className: "inactive" };
-  }
-
-  if (needsDailyRefresh(job, today)) {
+  if (needsRefresh(job, today)) {
     return { label: "Needs refresh", className: "inactive" };
   }
 
-  return { label: "Active today", className: "active" };
+  return { label: "Fresh this week", className: "active" };
 };
 
-const isActive = (job, today = getToday()) => {
+const isOpen = (job, today = getToday()) => {
   if (job.status !== "active") {
-    return false;
-  }
-
-  if (needsDailyRefresh(job, today)) {
     return false;
   }
 
   const closingDate = parseDate(job.closingDate);
   return !closingDate || closingDate >= today;
 };
+
+const isActive = (job, today = getToday()) => isOpen(job, today) && !needsRefresh(job, today);
 
 const daysUntilClose = (job, today = getToday()) => {
   const closingDate = parseDate(job.closingDate);
@@ -146,7 +137,7 @@ const matchesFilters = (job, today = getToday()) => {
     return false;
   }
 
-  if (state.activeOnly && !isActive(job, today)) {
+  if (state.activeOnly && !isOpen(job, today)) {
     return false;
   }
 
@@ -188,6 +179,11 @@ const roleLabel = {
   "data-analytics": "Data Analytics"
 };
 
+const formatDateLabel = (value, fallback) => {
+  const parsed = parseDate(value);
+  return parsed ? value : fallback;
+};
+
 const formatRefreshLabel = (job, today) => {
   const verificationAge = getVerificationAge(job, today);
 
@@ -196,7 +192,7 @@ const formatRefreshLabel = (job, today) => {
   }
 
   if (verificationAge === 0) {
-    return "Checked today";
+    return "Checked this week";
   }
 
   return `Refresh overdue by ${verificationAge} day(s)`;
@@ -220,6 +216,8 @@ const renderTags = (job, today) => {
 
 const renderPriorityCard = (job, today) => {
   const closeInDays = daysUntilClose(job, today);
+  const verifiedLabel = formatDateLabel(job.verifiedDate, "Not verified yet");
+  const postedLabel = job.postedLabel || formatDateLabel(job.postedDate, "Posted date unavailable");
 
   return `
   <article class="priority-card">
@@ -238,9 +236,9 @@ const renderPriorityCard = (job, today) => {
       <span>${job.workMode}</span>
     </div>
     <div class="meta-row">
-      <span>Last verified: ${job.verifiedDate}</span>
+      <span>Last verified: ${verifiedLabel}</span>
       <span>${formatRefreshLabel(job, today)}</span>
-      <span>${job.postedLabel || "Posted date unavailable"}</span>
+      <span>${postedLabel}</span>
     </div>
     <p class="meta-row">${job.sourceNote}</p>
     <div class="job-actions">
@@ -257,7 +255,9 @@ const renderJobCard = (job, today) => `
         <h3 class="job-title">${job.title}</h3>
         <p class="org-name">${job.organization}</p>
       </div>
-      <span class="mono">${job.postedDate ? `Posted ${job.postedDate}` : job.postedLabel}</span>
+      <span class="mono">${
+        job.postedDate ? `Posted ${job.postedDate}` : job.postedLabel || "Posted date unavailable"
+      }</span>
     </div>
     <div class="tag-row">${renderTags(job, today)}</div>
     <p>${job.summary}</p>
@@ -267,7 +267,7 @@ const renderJobCard = (job, today) => `
       <span>${job.closingDate ? `Close date: ${job.closingDate}` : "Close date: not listed"}</span>
     </div>
     <div class="meta-row">
-      <span>Last verified: ${job.verifiedDate}</span>
+      <span>Last verified: ${formatDateLabel(job.verifiedDate, "Not verified yet")}</span>
       <span>${formatRefreshLabel(job, today)}</span>
       <span>${job.sourceNote}</span>
     </div>
@@ -287,13 +287,16 @@ const render = () => {
   const today = getToday();
   const jobs = filteredJobs(today);
   const priorities = priorityJobs(today, jobs);
-  const activeJobs = window.JOB_DATA.filter((job) => isActive(job, today));
+  const activeJobs = window.JOB_DATA.filter((job) => isOpen(job, today));
+  const freshJobs = window.JOB_DATA.filter((job) => isActive(job, today));
 
   elements.activeCount.textContent = String(activeJobs.length);
   elements.priorityCount.textContent = String(priorities.length);
-  elements.resultsSummary.textContent = `${jobs.length} matching role(s)`;
-  elements.freshnessNote.textContent = `Daily verification window: ${DAILY_REFRESH_WINDOW_DAYS} ${
-    DAILY_REFRESH_WINDOW_DAYS === 1 ? "day" : "days"
+  elements.resultsSummary.textContent = `${jobs.length} matching role(s) • ${freshJobs.length} fresh this week`;
+  elements.freshnessNote.textContent = `Today: ${
+    today.toISOString().slice(0, 10)
+  } • Weekly freshness window: ${REFRESH_WINDOW_DAYS} ${
+    REFRESH_WINDOW_DAYS === 1 ? "day" : "days"
   }`;
 
   elements.priorityList.innerHTML = priorities.length
