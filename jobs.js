@@ -1,30 +1,5 @@
 window.JOB_DATA = [
   {
-    "id": "anu-research-jobs-postdoctoral-fellow-research-fellow",
-    "title": "Postdoctoral Fellow / Research Fellow",
-    "organization": "Australian National University",
-    "location": "Australia",
-    "region": "australia",
-    "track": "research",
-    "roleFamily": "ai-research",
-    "source": "company",
-    "status": "active",
-    "workMode": "on-site",
-    "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
-    "closingDate": null,
-    "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-10-25. Public search pages can change, so review before applying.",
-    "tags": [
-      "ANU",
-      "auto-discovered",
-      "research"
-    ],
-    "summary": "Weekly auto-collected research role from Australian National University: Postdoctoral Fellow / Research Fellow.",
-    "url": "https://jobs.anu.edu.au/jobs/postdoctoral-fellow-research-fellow-canberra-act-act-australia-7bdff7cd-bb2a-48ea-9cc1-13fbf6b56e06"
-  },
-  {
     "id": "anu-research-jobs-postdoctoral-fellow",
     "title": "Postdoctoral Fellow",
     "organization": "Australian National University",
@@ -36,22 +11,22 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "on-site",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "ANU",
       "auto-discovered",
       "research"
     ],
     "summary": "Weekly auto-collected research role from Australian National University: Postdoctoral Fellow.",
-    "url": "https://jobs.anu.edu.au/jobs/postdoctoral-fellow-canberra-act-act-australia-66b61451-369b-4c02-a512-6b34c32dff95"
+    "url": "https://jobs.anu.edu.au/jobs/postdoctoral-fellow-canberra-act-act-australia-0d7e2252-70c9-42bf-bee2-f8e3681e8f86"
   },
   {
-    "id": "anu-research-jobs-postdoctoral-research-fellow",
-    "title": "Postdoctoral / Research Fellow",
+    "id": "anu-research-jobs-senior-research-and-engagement-fellow",
+    "title": "Senior Research and Engagement Fellow",
     "organization": "Australian National University",
     "location": "Australia",
     "region": "australia",
@@ -61,22 +36,22 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "on-site",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "ANU",
       "auto-discovered",
       "research"
     ],
-    "summary": "Weekly auto-collected research role from Australian National University: Postdoctoral / Research Fellow.",
-    "url": "https://jobs.anu.edu.au/jobs/postdoctoral-research-fellow-canberra-act-act-australia-db5f1e24-2a91-430f-ace5-6d82cc90e000"
+    "summary": "Weekly auto-collected research role from Australian National University: Senior Research and Engagement Fellow.",
+    "url": "https://jobs.anu.edu.au/jobs/senior-research-and-engagement-fellow-canberra-act-act-australia"
   },
   {
-    "id": "anu-research-jobs-research-officer",
-    "title": "Research Officer",
+    "id": "anu-research-jobs-team-lead-data-management",
+    "title": "Team Lead, Data Management",
     "organization": "Australian National University",
     "location": "Australia",
     "region": "australia",
@@ -86,22 +61,22 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "on-site",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "ANU",
       "auto-discovered",
       "research"
     ],
-    "summary": "Weekly auto-collected research role from Australian National University: Research Officer.",
-    "url": "https://jobs.anu.edu.au/jobs/research-officer-canberra-act-act-australia-1dde533a-ede3-4dd1-93c8-e1546a5e9f05"
+    "summary": "Weekly auto-collected research role from Australian National University: Team Lead, Data Management.",
+    "url": "https://jobs.anu.edu.au/jobs/team-lead-data-management-canberra-act-act-australia"
   },
   {
-    "id": "anu-research-jobs-research-officer-peakall",
-    "title": "Research Officer (Peakall)",
+    "id": "anu-research-jobs-research-fellow-or-fellow",
+    "title": "Research Fellow or Fellow",
     "organization": "Australian National University",
     "location": "Australia",
     "region": "australia",
@@ -111,22 +86,22 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "on-site",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "ANU",
       "auto-discovered",
       "research"
     ],
-    "summary": "Weekly auto-collected research role from Australian National University: Research Officer (Peakall).",
-    "url": "https://jobs.anu.edu.au/jobs/research-officer-peakall-canberra-act-act-australia"
+    "summary": "Weekly auto-collected research role from Australian National University: Research Fellow or Fellow.",
+    "url": "https://jobs.anu.edu.au/jobs/research-fellow-or-fellow-canberra-act-act-australia-834b81da-43da-48a9-813b-ddd191cac889"
   },
   {
-    "id": "anu-research-jobs-senior-research-software-engineer-training-specialist",
-    "title": "Senior Research Software Engineer (Training Specialist)",
+    "id": "anu-research-jobs-senior-research-officer",
+    "title": "Senior Research Officer",
     "organization": "Australian National University",
     "location": "Australia",
     "region": "australia",
@@ -136,18 +111,43 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "on-site",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "ANU",
       "auto-discovered",
       "research"
     ],
-    "summary": "Weekly auto-collected research role from Australian National University: Senior Research Software Engineer (Training Specialist).",
-    "url": "https://jobs.anu.edu.au/jobs/senior-research-software-engineer-training-specialist-canberra-act-act-australia"
+    "summary": "Weekly auto-collected research role from Australian National University: Senior Research Officer.",
+    "url": "https://jobs.anu.edu.au/jobs/senior-research-officer-canberra-act-act-australia-fc4c7b6e-afa4-46f0-a070-8e820fff24ec"
+  },
+  {
+    "id": "anu-research-jobs-research-assistant",
+    "title": "Research Assistant",
+    "organization": "Australian National University",
+    "location": "Australia",
+    "region": "australia",
+    "track": "research",
+    "roleFamily": "ai-research",
+    "source": "company",
+    "status": "active",
+    "workMode": "on-site",
+    "postedDate": null,
+    "postedLabel": "Collected 2026-11-02",
+    "closingDate": null,
+    "priorityScore": 72,
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://jobs.anu.edu.au/cw/en/listing/ on 2026-11-02. Public search pages can change, so review before applying.",
+    "tags": [
+      "ANU",
+      "auto-discovered",
+      "research"
+    ],
+    "summary": "Weekly auto-collected research role from Australian National University: Research Assistant.",
+    "url": "https://jobs.anu.edu.au/jobs/research-assistant-canberra-act-act-australia-bff5de80-6ddf-4281-add1-0b5606d5a2fd"
   },
   {
     "id": "linkedin-au-cyber-jobs-skip-to-main-content",
@@ -161,11 +161,11 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
@@ -186,18 +186,18 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
       "cyber"
     ],
     "summary": "Weekly auto-collected industry role from linkedin.com: Join now.",
-    "url": "https://www.linkedin.com/signup/cold-join?source=jobs_registration&amp;session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fsearch%2F%3Fkeywords%3Dcyber%2520security%26location%3DAustralia&amp;trk=public_jobs_nav-header-join"
+    "url": "https://www.linkedin.com/signup/cold-join?source=jobs_registration&amp;session_redirect=https%3A%2F%2Fau.linkedin.com%2Fjobs%2Fsearch-results%3Fkeywords%3Dcyber%2Bsecurity&amp;trk=public_jobs_nav-header-join"
   },
   {
     "id": "linkedin-au-cyber-jobs-sign-in",
@@ -211,23 +211,23 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
       "cyber"
     ],
     "summary": "Weekly auto-collected industry role from linkedin.com: Sign in.",
-    "url": "https://www.linkedin.com/login?emailAddress=&amp;fromSignIn=&amp;fromSignIn=true&amp;session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fsearch%2F%3Fkeywords%3Dcyber%2520security%26location%3DAustralia&amp;trk=public_jobs_nav-header-signin"
+    "url": "https://www.linkedin.com/login?emailAddress=&amp;fromSignIn=&amp;fromSignIn=true&amp;session_redirect=https%3A%2F%2Fau.linkedin.com%2Fjobs%2Fsearch-results%3Fkeywords%3Dcyber%2Bsecurity&amp;trk=public_jobs_nav-header-signin"
   },
   {
     "id": "linkedin-au-cyber-jobs-easy-apply",
     "title": "Easy Apply",
-    "organization": "linkedin.com",
+    "organization": "au.linkedin.com",
     "location": "Australia",
     "region": "australia",
     "track": "industry",
@@ -236,23 +236,23 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
       "cyber"
     ],
-    "summary": "Weekly auto-collected industry role from linkedin.com: Easy Apply.",
-    "url": "https://www.linkedin.com/jobs/search/?keywords=cyber+security&amp;location=Australia&amp;f_AL=true&amp;trk=public_jobs_filters_f_AL"
+    "summary": "Weekly auto-collected industry role from au.linkedin.com: Easy Apply.",
+    "url": "https://au.linkedin.com/jobs/cyber-security-jobs?f_AL=true&amp;trk=public_jobs_filters_f_AL"
   },
   {
     "id": "linkedin-au-cyber-jobs-under-10-applicants",
     "title": "Under 10 applicants",
-    "organization": "linkedin.com",
+    "organization": "au.linkedin.com",
     "location": "Australia",
     "region": "australia",
     "track": "industry",
@@ -261,18 +261,18 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
       "cyber"
     ],
-    "summary": "Weekly auto-collected industry role from linkedin.com: Under 10 applicants.",
-    "url": "https://www.linkedin.com/jobs/search/?keywords=cyber+security&amp;location=Australia&amp;f_EA=true&amp;trk=public_jobs_filters_f_EA"
+    "summary": "Weekly auto-collected industry role from au.linkedin.com: Under 10 applicants.",
+    "url": "https://au.linkedin.com/jobs/cyber-security-jobs?f_EA=true&amp;trk=public_jobs_filters_f_EA"
   },
   {
     "id": "linkedin-au-cyber-jobs-sign-in-to-create-job-alert",
@@ -286,22 +286,22 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
       "cyber"
     ],
     "summary": "Weekly auto-collected industry role from linkedin.com: Sign in to create job alert.",
-    "url": "https://www.linkedin.com/login?emailAddress=&amp;fromSignIn=&amp;session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fsearch%2F%3Fkeywords%3Dcyber%2520security%26location%3DAustralia&amp;trk=public_jobs_job-alert-guest-redirect-cta"
+    "url": "https://www.linkedin.com/login?emailAddress=&amp;fromSignIn=&amp;session_redirect=https%3A%2F%2Fau.linkedin.com%2Fjobs%2Fsearch-results%3Fkeywords%3Dcyber%2Bsecurity&amp;trk=public_jobs_job-alert-guest-redirect-cta"
   },
   {
-    "id": "linkedin-au-cyber-jobs-cyber-security-officer",
-    "title": "Cyber Security Officer",
+    "id": "linkedin-au-cyber-jobs-senior-cybersecurity-engineer",
+    "title": "Senior Cybersecurity Engineer",
     "organization": "au.linkedin.com",
     "location": "Australia",
     "region": "australia",
@@ -311,22 +311,22 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
       "cyber"
     ],
-    "summary": "Weekly auto-collected industry role from au.linkedin.com: Cyber Security Officer.",
-    "url": "https://au.linkedin.com/jobs/view/cyber-security-officer-at-department-of-government-services-4478674165?position=1&amp;pageNum=0&amp;refId=or7EOtD5nrzBS5cs2S2uzQ%3D%3D&amp;trackingId=I7rp06E0gDXfFZUi1C6bkw%3D%3D"
+    "summary": "Weekly auto-collected industry role from au.linkedin.com: Senior Cybersecurity Engineer.",
+    "url": "https://au.linkedin.com/jobs/view/senior-cybersecurity-engineer-at-datacom-4479259126?position=1&amp;pageNum=0&amp;refId=%2B6fkGaTcPRu2mMV%2FquhTQQ%3D%3D&amp;trackingId=pHWY0RCxf%2B5Dri%2FeHGKJ0A%3D%3D"
   },
   {
-    "id": "linkedin-au-cyber-jobs-head-of-cyber-security",
-    "title": "Head of Cyber Security",
+    "id": "linkedin-au-cyber-jobs-cybercx-senior-security-analyst",
+    "title": "CyberCX - Senior Security Analyst",
     "organization": "au.linkedin.com",
     "location": "Australia",
     "region": "australia",
@@ -336,22 +336,22 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
       "cyber"
     ],
-    "summary": "Weekly auto-collected industry role from au.linkedin.com: Head of Cyber Security.",
-    "url": "https://au.linkedin.com/jobs/view/head-of-cyber-security-at-intellihub-group-4481413201?position=2&amp;pageNum=0&amp;refId=or7EOtD5nrzBS5cs2S2uzQ%3D%3D&amp;trackingId=hua42bAmRYlx7G%2BENs5MGw%3D%3D"
+    "summary": "Weekly auto-collected industry role from au.linkedin.com: CyberCX - Senior Security Analyst.",
+    "url": "https://au.linkedin.com/jobs/view/cybercx-senior-security-analyst-at-cybercx-4476294175?position=2&amp;pageNum=0&amp;refId=%2B6fkGaTcPRu2mMV%2FquhTQQ%3D%3D&amp;trackingId=aJmwFhFhrO0T6lR8E5KUNw%3D%3D"
   },
   {
-    "id": "linkedin-au-cyber-jobs-cyber-security-specialist",
-    "title": "Cyber Security Specialist",
+    "id": "linkedin-au-cyber-jobs-cybercx",
+    "title": "CyberCX",
     "organization": "au.linkedin.com",
     "location": "Australia",
     "region": "australia",
@@ -361,22 +361,22 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
       "cyber"
     ],
-    "summary": "Weekly auto-collected industry role from au.linkedin.com: Cyber Security Specialist.",
-    "url": "https://au.linkedin.com/jobs/view/cyber-security-specialist-at-leaveplus-4481642659?position=3&amp;pageNum=0&amp;refId=or7EOtD5nrzBS5cs2S2uzQ%3D%3D&amp;trackingId=8iUZSp0VU5z%2FCeCR49dBFQ%3D%3D"
+    "summary": "Weekly auto-collected industry role from au.linkedin.com: CyberCX.",
+    "url": "https://au.linkedin.com/company/cyber-cx?trk=public_jobs_jserp-result_job-search-card-subtitle"
   },
   {
-    "id": "linkedin-au-cyber-jobs-cyber-security-analyst",
-    "title": "Cyber Security Analyst",
+    "id": "linkedin-au-cyber-jobs-cybercx-senior-security-analyst",
+    "title": "CyberCX - Senior Security Analyst",
     "organization": "au.linkedin.com",
     "location": "Australia",
     "region": "australia",
@@ -386,22 +386,22 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
       "cyber"
     ],
-    "summary": "Weekly auto-collected industry role from au.linkedin.com: Cyber Security Analyst.",
-    "url": "https://au.linkedin.com/jobs/view/cyber-security-analyst-at-teamified-4475161027?position=4&amp;pageNum=0&amp;refId=or7EOtD5nrzBS5cs2S2uzQ%3D%3D&amp;trackingId=lWUVgma2aldqJ3Xk5uGcTA%3D%3D"
+    "summary": "Weekly auto-collected industry role from au.linkedin.com: CyberCX - Senior Security Analyst.",
+    "url": "https://au.linkedin.com/jobs/view/cybercx-senior-security-analyst-at-cybercx-4478872370?position=3&amp;pageNum=0&amp;refId=%2B6fkGaTcPRu2mMV%2FquhTQQ%3D%3D&amp;trackingId=Qy%2BdqUPyRjpDEREeUhu8sQ%3D%3D"
   },
   {
-    "id": "linkedin-au-cyber-jobs-cyber-security-analyst",
-    "title": "Cyber Security Analyst",
+    "id": "linkedin-au-cyber-jobs-cyber-threat-defence-analyst",
+    "title": "Cyber Threat Defence Analyst",
     "organization": "au.linkedin.com",
     "location": "Australia",
     "region": "australia",
@@ -411,43 +411,18 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "LinkedIn",
       "auto-collected",
       "cyber"
     ],
-    "summary": "Weekly auto-collected industry role from au.linkedin.com: Cyber Security Analyst.",
-    "url": "https://au.linkedin.com/jobs/view/cyber-security-analyst-at-teamified-4475150489?position=5&amp;pageNum=0&amp;refId=or7EOtD5nrzBS5cs2S2uzQ%3D%3D&amp;trackingId=HBGp3wTofztrumHKkICwzA%3D%3D"
-  },
-  {
-    "id": "linkedin-au-cyber-jobs-cyber-security-consultant-grc",
-    "title": "Cyber Security Consultant - GRC",
-    "organization": "au.linkedin.com",
-    "location": "Australia",
-    "region": "australia",
-    "track": "industry",
-    "roleFamily": "cybersecurity",
-    "source": "linkedin",
-    "status": "active",
-    "workMode": "hybrid",
-    "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
-    "closingDate": null,
-    "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.linkedin.com/jobs/search/?keywords=cyber%20security&location=Australia on 2026-10-25. Public search pages can change, so review before applying.",
-    "tags": [
-      "LinkedIn",
-      "auto-collected",
-      "cyber"
-    ],
-    "summary": "Weekly auto-collected industry role from au.linkedin.com: Cyber Security Consultant - GRC.",
-    "url": "https://au.linkedin.com/jobs/view/cyber-security-consultant-grc-at-teamified-4483376282?position=6&amp;pageNum=0&amp;refId=or7EOtD5nrzBS5cs2S2uzQ%3D%3D&amp;trackingId=JGgteeiiYsqLDvpkQYnyfA%3D%3D"
+    "summary": "Weekly auto-collected industry role from au.linkedin.com: Cyber Threat Defence Analyst.",
+    "url": "https://au.linkedin.com/jobs/view/cyber-threat-defence-analyst-at-macquarie-group-4441032243?position=4&amp;pageNum=0&amp;refId=%2B6fkGaTcPRu2mMV%2FquhTQQ%3D%3D&amp;trackingId=e7mNnvTrsHWzNgD%2BQtXCcw%3D%3D"
   },
   {
     "id": "google-au-ai-jobs-click-here",
@@ -461,17 +436,17 @@ window.JOB_DATA = [
     "status": "active",
     "workMode": "hybrid",
     "postedDate": null,
-    "postedLabel": "Collected 2026-10-25",
+    "postedLabel": "Collected 2026-11-02",
     "closingDate": null,
     "priorityScore": 72,
-    "verifiedDate": "2026-10-25",
-    "sourceNote": "Weekly auto-collected from https://www.google.com/search?q=site%3Acareers.google.com+Australia+AI+jobs on 2026-10-25. Public search pages can change, so review before applying.",
+    "verifiedDate": "2026-11-02",
+    "sourceNote": "Weekly auto-collected from https://www.google.com/search?q=site%3Acareers.google.com+Australia+AI+jobs on 2026-11-02. Public search pages can change, so review before applying.",
     "tags": [
       "Google Search",
       "auto-collected",
       "AI"
     ],
     "summary": "Weekly auto-collected industry role from google.com: click here.",
-    "url": "https://www.google.com/search?q=site:careers.google.com+Australia+AI+jobs&amp;sca_esv=1d7cc2e82e2ca713&amp;sxsrf=APpeQnuWafSJdnyiJIf9gfuS19vPcVJGzA:1792972712114&amp;emsg=SG_REL&amp;sei=qJfeatjABpCmmtkPy9eysAY"
+    "url": "https://www.google.com/search?q=site:careers.google.com+Australia+AI+jobs&amp;sca_esv=4d6992ee60166a16&amp;sxsrf=AKL5yDhJ1BXBiPvvydc-ufUAVmWhbQacRw:1793582586271&amp;emsg=SG_REL&amp;sei=-uXnaqaNENKqur8PuNC6gAE"
   }
 ];
